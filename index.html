@@ -13,7 +13,7 @@
     <header>
         <nav class="inicio">
             <div class="nome">
-                <h1><span style="color: red;">M</span>atheus</h1>
+                <h1><span style="color: #2196f3;">M</span>atheus</h1>
             </div>
 
             <div class="a">
@@ -30,7 +30,7 @@
                 <div class="meio2">
                     <h4>Olá!!</h4>
                     <br>
-                    <h2>Eu sou Matheus Marinello</h2>
+                    <h2>Eu sou,<span style="color: #2196f3;">&nbsp;Matheus Marinello</span></h2>
                     <br>
                     <h3>Full-stack Web Developer<h5>
                 </div>
@@ -39,7 +39,21 @@
                         <li>Unindo lógica e criatividade para desenvolver aplicações completas e eficientes.</li>
                         <li>Foco em performance e inovação em toda a stack.</li>
                         <li>Transformo código em experiências dinâmicas — do servidor à interface.</li>
+                        <li>Gosto de transformar ideias em código, dando vida a projetos através da programação.</li>
+                        <li>Tenho paixão por aprender e evoluir constantemente, buscando aprimorar minhas habilidades
+                            todos os dias.</li>
+                        <li>Programo com propósito e dedicação, sempre com o objetivo de criar algo significativo e de
+                            qualidade.</li>
                     </ul>
+                </div>
+                <div class="baixo">
+                    <button class="btn">Let's Talk</button>
+                </div>
+
+                <div class="itens">
+                    <i class="bi bi-facebook" id="faceb"></i>
+                    <i class="bi bi-linkedin" id="link"></i>
+                    <i class="bi bi-briefcase-fill" id="ende"></i>
                 </div>
             </div>
 
@@ -47,42 +61,32 @@
 
             <div class="foto">
                 <div class="fotodentro">
-                <img src="img/fotope.jpg" alt="avatar" width="300px">
+                    <img src="img/fotope.jpg" alt="avatar" width="300px">
                 </div>
             </div>
-            
+
         </div>
 
-        <div class="baixo">
-            <button>Let's Talk</button>
-        </div>
-
-        <div class="itens">
-            <i class="bi bi-facebook" id="face"></i>
-            <i class="bi bi-linkedin" id="link"></i>
-            <i class="bi bi-briefcase-fill" id="ende"></i>
-        </div>
     </header>
 
     <main>
         <nav class="sobre">
-            <h1>About Me</h1>
+            <h1>About <span style="color: #2196f3;"> Me</span></h1>
         </nav>
-
-        <div id="foto2">
-            <img src="img/fotope.jpg" alt="avatar" width="200px">
+        <div class="avatar">
+            <div class="foto2">
+                <img src="img/fotope.jpg" alt="avatar" width="200px">
+            </div>
         </div>
 
         <div class="baixo2">
             <h2>Full-stack Web Developer</h2>
             <br>
-            <p>Sou um desenvolvedor full-stack apaixonado por tecnologia e inovação. Gosto de transformar ideias em
-                produtos funcionais, combinando criatividade, lógica e atenção aos detalhes para construir experiências
-                digitais completas.</p>
+            <p class="p">Sou um desenvolvedor full-stack apaixonado por tecnologia, inovação e pela arte de transformar ideias em soluções digitais completas. Com experiência em front-end e back-end, gosto de unir criatividade, lógica e atenção aos detalhes para construir interfaces intuitivas e sistemas robustos. Minha missão é criar produtos funcionais que não apenas resolvem problemas, mas também encantam os usuários. Trabalho com foco em performance, escalabilidade e boas práticas de desenvolvimento, sempre buscando evoluir e entregar resultados que façam a diferença.</p>
         </div>
 
-        <div class="btn">
-            <button>Hire Me</button>
+        <div class="botao">
+            <button class="btn 2">Hire Me</button>
         </div>
     </main>
 
@@ -119,3 +123,9 @@
 </body>
 
 </html>
+
+<script>
+    window.addEventListener("load", () => {
+        document.body.classList.add("loaded");
+    });
+</script>
