@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You Baby</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Griffy&family=Love+Light&family=Meow+Script&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <iframe width="0" height="0" src="https://www.youtube.com/embed/nyuo9-OjNNg?autoplay=1&loop=1&playlist=nyuo9-OjNNg"
+    frameborder="0" allow="autoplay" allowfullscreen></iframe>
+  <header>
+    <div class="titulo">
+      <h1>Para o meu Gato Preto</h1>
+    </div>
+    <div class="pai">
+      <div class="texto1">
+        <p>Eu fiz isso pra você, meu amor. Fiz pra que você se lembre de mim… Mas, mais do que isso, fiz pra te lembrar
+          do quanto você é especial pra mim . Muito. . . <br> <br>
+          Você é como uma estrela cadente que passou pela minha vida — inesperada, intensa, impossível de ignorar . . .
+          <br>
+          <br>
+          As deusas de todas as religiões teriam inveja da sua beleza. De verdade.
+          Eu ainda não entendo como alguém como eu conseguiu ter a sorte de te encontrar. <br>
+          Você é demais pra qualquer um . . .
+          <br>
+          <br>
+          Olhar pra você é como olhar pro sol: se a gente olha demais, queima. . . mas mesmo assim vale a pena, só por
+          ver
+          você brilhar.
+          Pra mim, você é a própria definição de perfeição.
+          <br>
+          <br>
+          Tenho medo de te perder, ainda mais porque nem te tenho de verdade.
+          Mas eu vou fazer o que for preciso. Tudo que eu puder.
+          Vou dar o máximo de mim. . . <br>por você, por nós. . .
+        </p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="background">
+      <div class="container">
+        <div class="fotos">
+          <p class="clicar">Clique aqui</p>
+          <img src="img/imagem 1.jpeg" alt="Imagem estilizada"
+            data-msg="Você tem sido a melhor coisa que me aconteceu! 💖🎇" />
+          <div class="mensagem"></div>
+        </div>
+
+        <div class="fotos2">
+          <p class="clicar">Agora aqui</p>
+          <img src="img/img 2.jpeg" alt="Imagem estilizada"
+            data-msg="Você ilumina meus dias com o brilho dos seus olhos!! 👀💞" />
+          <div class="mensagem"></div>
+        </div>
+
+        <div class="fotos3">
+          <p class="clicar">Depois aqui</p>
+          <img src="img/img 3.jpeg" alt="Imagem estilizada"
+            data-msg="Você é incrível, lembre-se disso pra sempre!!! 💌💝" />
+          <div class="mensagem"></div>
+        </div>
+
+      </div>
+
+      <div class="container2">
+        <div class="fotos4">
+          <p class="clicar">Aí aqui</p>
+          <img src="img/img4.jpeg" alt="Imagem estilizada" data-msg="Eu sempre vou estar aqui do seu lado... 💗💕" />
+          <div class="mensagem"></div>
+        </div>
+
+        <div class="fotos5">
+          <p class="clicar">Mais uuummm</p>
+          <img src="img/img5.jpeg" alt="Imagem estilizada"
+            data-msg="Serei seu homem, namorado, amigo e marido!!! 🤍💍" />
+          <div class="mensagem"></div>
+        </div>
+
+        <div class="fotos6">
+          <p class="clicar">E por fim aqui...</p>
+          <img src="img" alt="Imagem estilizada" data-msg="Nunca vou te abandonar, você é minha, mulher! 💞🥰" />
+          <div class="mensagem"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script>
+    const imagens = document.querySelectorAll('.container img, .container2 img');
+
+    imagens.forEach(img => {
+      img.addEventListener('click', () => {
+        const container = img.parentElement;
+        const mensagemBox = container.querySelector('.mensagem');
+        const texto = img.getAttribute('data-msg');
+
+        // Esconde todas as outras mensagens
+        document.querySelectorAll('.mensagem').forEach(m => {
+          m.style.display = 'none';
+          m.classList.remove('fade-in', 'fade-out');
+        });
+
+        // Mostra a nova mensagem com fade-in
+        mensagemBox.textContent = texto;
+        mensagemBox.style.display = 'block';
+        setTimeout(() => {
+          mensagemBox.classList.add('fade-in');
+        }, 10); // pequeno delay para ativar transição
+
+        // Aplica fade-out após 5 segundos
+        setTimeout(() => {
+          mensagemBox.classList.remove('fade-in');
+          mensagemBox.classList.add('fade-out');
+          setTimeout(() => {
+            mensagemBox.style.display = 'none';
+            mensagemBox.classList.remove('fade-out');
+          }, 1000); // tempo da transição de saída
+        }, 5000);
+      });
+    });
+  </script>
+</body>
+
+</html>
