@@ -1,188 +1,174 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    max-height: 100vh;
-    background: #1b0f20;
-    background-image: url(https://i.pinimg.com/originals/04/e4/7e/04e47e2855c78b802b523ff6d1357b25.gif);
-    background-size: 120vh;
-    font-family: "Griffy", system-ui;
+  max-height: 100vh;
+  background: #1b0f20;
+  background-image: url(https://i.pinimg.com/originals/04/e4/7e/04e47e2855c78b802b523ff6d1357b25.gif);
+  background-size: 120vh;
+  font-family: "Griffy", system-ui;
 }
 
 header {
-    width: 100%;
-    height: 100dvh;
+  width: 100%;
+  height: 100dvh;
 }
 
 .titulo {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pai {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 80%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
 }
 
 .texto1 {
-    font-size: 30px;
-    width: 60%;
-    height: 99%;
-    display: flex;
-    align-items: center;
-    border-radius: 30px;
-    background-color: rgba(121, 121, 121, 0.178);
-    box-shadow: -1px -1px 73px -7px rgba(255, 255, 255, 0.75);
-    -webkit-box-shadow: -1px -1px 73px -7px rgba(141, 141, 141, 0.75);
-    -moz-box-shadow: -1px -1px 73px -7px rgba(75, 75, 75, 0.75);
+  font-size: 28px;
+  width: 60%;
+  height: 99%;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  background-color: rgba(121, 121, 121, 0.178);
+  box-shadow: -1px -1px 73px -7px rgba(255, 255, 255, 0.75);
 }
 
 h1 {
-    margin-top: 1%;
-    color: white;
-    font-size: 100px;
-    text-shadow: 4px 4px 5px rgba(255, 238, 0, 0.5);
+  margin-top: 1%;
+  color: white;
+  font-size: 100px;
+  text-shadow: 4px 4px 5px rgba(255, 238, 0, 0.5);
 }
 
 p {
-    color: #ffffff;
-    text-align: center;
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
-
-}
-
-.container {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.container2 {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.fotos img {
-    width: 220px;
-    height: 355px;
-    margin-top: 1%;
-    border-radius: 50px;
-    animation: foto 6s;
-    animation-fill-mode: forwards;
-    transition: transform 1s ease, box-shadow 2s;
-    cursor: pointer;
-    border: solid 1px white;
-}
-
-
-.fotos4 img {
-    width: 220px;
-    height: 355px;
-    margin-top: 1%;
-    border-radius: 50px;
-    animation: foto 6s;
-    animation-fill-mode: forwards;
-    transition: transform 1s ease, box-shadow 2s;
-    cursor: pointer;
-    border: solid 1px white;
-}
-
-.fotos5 img {
-    width: 210px;
-    height: 355px;
-    margin-top: 1%;
-    border-radius: 50px;
-    animation: foto 6s;
-    animation-fill-mode: forwards;
-    transition: transform 1s ease, box-shadow 2s;
-    cursor: pointer;
-    border: solid 1px white;
-}
-
-.fotos2 img,
-.fotos3 img,
-.fotos6 img {
-    width: 200px;
-    margin-top: 1%;
-    border-radius: 50px;
-    animation: foto 6s;
-    animation-fill-mode: forwards;
-    transition: transform 1s ease, box-shadow 2s;
-    cursor: pointer;
-    border: solid 1px white;
-}
-
-.fotos img:hover,
-.fotos2 img:hover,
-.fotos3 img:hover,
-.fotos4 img:hover,
-.fotos5 img:hover,
-.fotos6 img:hover {
-    transform: translateX(60px);
-    box-shadow: -1px -1px 73px -7px rgba(255, 255, 255, 0.75);
-    -webkit-box-shadow: -1px -1px 73px -7px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: -1px -1px 73px -7px rgba(255, 255, 255, 0.75);
-}
-
-@keyframes foto {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 0.90;
-    }
-}
-
-.mensagem {
-    display: none;
-    position: absolute;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    font-family: sans-serif;
-    font-size: 14px;
-    margin-left: 200px;
-    margin-top: -100px;
-    z-index: 10;
-    opacity: 0;
-    transition: opacity 1s ease;
-}
-
-.mensagem.fade-out {
-    opacity: 0;
-}
-
-.mensagem.fade-in {
-    opacity: 1;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
 }
 
 main {
-    width: 100%;
-    height: 100dvh;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
 }
 
 footer {
-    border: solid 1px red;
-    width: 100%;
-    height: 100dvh; 
+  border: solid 1px red;
+  width: 100%;
+  height: 100dvh;
 }
 
 .musica {
-    display: flex;
-    color: #000000;
-    background-color: #ffffff;
-    border: solid 1px rgb(0, 0, 0);
-    cursor: pointer;
+  color: #000000;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  box-shadow: 4px 4px 5px rgba(255, 238, 0, 0.5);
 }
+
+/* ✅ Carrossel estilo celular */
+#carouselExampleIndicators {
+  max-width: 400px;
+  margin: 0 auto 3rem;
+  border-radius: 45px;
+  overflow: hidden;
+}
+
+.carousel-item {
+  height: 550px;
+  background-color: #000;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-caption h5 {
+  font-family: 'Griffy', cursive;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0 6px;
+  border: none;
+}
+
+.carousel-indicators .active {
+  background-color: #000;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+}
+
+/* ✅ Responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    width: 80%;
+    height: 40%;
+  }
+
+  .texto1 {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+
+  .carousel-item {
+    height: 450px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 0.9rem;
+  }
+
+  .musica {
+    width: 15%;
+    height: 28%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .texto1 {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .carousel-item {
+    height: 400px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 0.8rem;
+  }
+}
+

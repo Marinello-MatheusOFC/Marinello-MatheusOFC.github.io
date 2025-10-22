@@ -5,7 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>For You Baby</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Seu CSS personalizado -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Fontes do Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Griffy&family=Love+Light&family=Meow+Script&display=swap"
@@ -13,9 +20,10 @@
 </head>
 
 <body>
-  <audio id="musica" autoplay loop>
-    <source src="audio/musica.mp3" type="audio/mpeg">
-  </audio>
+  <iframe width="0" height="0"
+    src="https://www.youtube.com/embed/F_c9iON48uw?autoplay=1&loop=1&playlist=F_c9iON48uw" frameborder="0"
+    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
   <header>
     <div class="titulo">
       <p class="musica">Clique aqui</p>
@@ -24,21 +32,15 @@
     <div class="pai">
       <div class="texto1">
         <p>Eu fiz isso pra você, meu amor. Fiz pra que você se lembre de mim… Mas, mais do que isso, fiz pra te lembrar
-          do quanto você é especial pra mim . Muito. . . <br> <br>
+          do quanto você é especial pra mim . Muito. . . <br><br>
           Você é como uma estrela cadente que passou pela minha vida — inesperada, intensa, impossível de ignorar . . .
-          <br>
-          <br>
+          <br><br>
           As deusas de todas as religiões teriam inveja da sua beleza. De verdade.
           Eu ainda não entendo como alguém como eu conseguiu ter a sorte de te encontrar. <br>
-          Você é demais pra qualquer um . . .
-          <br>
-          <br>
+          Você é demais pra qualquer um . . .<br><br>
           Olhar pra você é como olhar pro sol: se a gente olha demais, queima. . . mas mesmo assim vale a pena, só por
-          ver
-          você brilhar.
-          Pra mim, você é a própria definição de perfeição.
-          <br>
-          <br>
+          ver você brilhar.
+          Pra mim, você é a própria definição de perfeição.<br><br>
           Tenho medo de te perder, ainda mais porque nem te tenho de verdade.
           Mas eu vou fazer o que for preciso. Tudo que eu puder.
           Vou dar o máximo de mim. . . <br>por você, por nós. . .
@@ -46,100 +48,92 @@
       </div>
     </div>
   </header>
+
   <main>
-    <div class="background">
-      <div class="container">
-        <div class="fotos">
-          <p class="clicar">Clique aqui</p>
-          <img src="img/imagem 1.jpeg" alt="Imagem estilizada"
-            data-msg="Você tem sido a melhor coisa que me aconteceu! 💖🎇" />
-          <div class="mensagem"></div>
-        </div>
-
-        <div class="fotos2">
-          <p class="clicar">Agora aqui</p>
-          <img src="img/img 2.jpeg" alt="Imagem estilizada"
-            data-msg="Você ilumina meus dias com o brilho dos seus olhos!! 👀💞" />
-          <div class="mensagem"></div>
-        </div>
-
-        <div class="fotos3">
-          <p class="clicar">Depois aqui</p>
-          <img src="img/img 3.jpeg" alt="Imagem estilizada"
-            data-msg="Você é incrível, lembre-se disso pra sempre!!! 💌💝" />
-          <div class="mensagem"></div>
-        </div>
-
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+          aria-label="Slide 7"></button>
       </div>
 
-      <div class="container2">
-        <div class="fotos4">
-          <p class="clicar">Aí aqui</p>
-          <img src="img/img4.jpeg" alt="Imagem estilizada" data-msg="Eu sempre vou estar aqui do seu lado... 💗💕" />
-          <div class="mensagem"></div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/imagem 1.jpeg" class="d-block w-100" alt="Slide 1">
+          <div class="carousel-caption">
+            <h5>Você é minha mulher, e de mais ninguém. 💋💍</h5>
+          </div>
         </div>
-
-        <div class="fotos5">
-          <p class="clicar">Mais uuummm</p>
-          <img src="img/img5.jpeg" alt="Imagem estilizada"
-            data-msg="Serei seu homem, namorado, amigo e marido!!! 🤍💍" />
-          <div class="mensagem"></div>
+        <div class="carousel-item">
+          <img src="img/img 2.jpeg" class="d-block w-100" alt="Slide 2">
+          <div class="carousel-caption">
+            <h5>Vou dar valor à você, como nunca dei a ninguém. 💝😁</h5>
+          </div>
         </div>
-
-        <div class="fotos6">
-          <p class="clicar">E por fim aqui...</p>
-          <img src="img" alt="Imagem estilizada" data-msg="Nunca vou te abandonar, você é minha, mulher! 💞🥰" />
-          <div class="mensagem"></div>
+        <div class="carousel-item">
+          <img src="img/img 3.jpeg" class="d-block w-100" alt="Slide 3">
+          <div class="carousel-caption">
+            <h5>Não me abandone, eu posso ser sua felicidade. 🥰💞</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/img4.jpeg" class="d-block w-100" alt="Slide 4">
+          <div class="carousel-caption">
+            <h5>Se não for você, quem vai me fazer feliz?! 👀😍</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/img5.jpeg" class="d-block w-100" alt="Slide 5">
+          <div class="carousel-caption">
+            <h5>Eu preciso de você na minha vida, você sabe disso. 😥💗</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/WhatsApp Image 2025-10-19 at 05.21.08.jpeg" class="d-block w-100" alt="Slide 6">
+          <div class="carousel-caption">
+            <h5>Vamos casar e ter filhos, "os garanhões que montarão o mundo" 💖🥺</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video class="d-block w-100" autoplay muted loop>
+            <source src="img/WhatsApp Video 2025-10-19 at 03.58.33.mp4" type="video/mp4">
+          </video>
+          <div class="carousel-caption">
+            <h5>Amar você, e me entregar à você, foi a minha decisão mais sábia! 🥺💗</h5>
+          </div>
         </div>
       </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próxima</span>
+      </button>
     </div>
   </main>
 
   <footer>
-
+    <!-- Rodapé opcional -->
   </footer>
 
-  <script>
-    const imagens = document.querySelectorAll('.container img, .container2 img');
-
-    imagens.forEach(img => {
-      img.addEventListener('click', () => {
-        const container = img.parentElement;
-        const mensagemBox = container.querySelector('.mensagem');
-        const texto = img.getAttribute('data-msg');
-
-        // Esconde todas as outras mensagens
-        document.querySelectorAll('.mensagem').forEach(m => {
-          m.style.display = 'none';
-          m.classList.remove('fade-in', 'fade-out');
-        });
-
-        // Mostra a nova mensagem com fade-in
-        mensagemBox.textContent = texto;
-        mensagemBox.style.display = 'block';
-        setTimeout(() => {
-          mensagemBox.classList.add('fade-in');
-        }, 10); // pequeno delay para ativar transição
-
-        // Aplica fade-out após 5 segundos
-        setTimeout(() => {
-          mensagemBox.classList.remove('fade-in');
-          mensagemBox.classList.add('fade-out');
-          setTimeout(() => {
-            mensagemBox.style.display = 'none';
-            mensagemBox.classList.remove('fade-out');
-          }, 1000); // tempo da transição de saída
-        }, 5000);
-      });
-    });
-  </script>
-
-  <script>
-    document.addEventListener('click', () => {
-      const audio = document.getElementById('musica');
-      audio.play();
-    });
-  </script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
