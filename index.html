@@ -10,14 +10,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Griffy&family=Love+Light&family=Meow+Script&display=swap"
     rel="stylesheet">
-
 </head>
 
 <body>
-  <iframe width="0" height="0" src="https://www.youtube.com/embed/nyuo9-OjNNg?autoplay=1&loop=1&playlist=nyuo9-OjNNg"
-    frameborder="0" allow="autoplay" allowfullscreen></iframe>
+  <audio id="musica" autoplay loop>
+    <source src="audio/musica.mp3" type="audio/mpeg">
+  </audio>
   <header>
     <div class="titulo">
+      <p class="musica">Clique aqui</p>
       <h1>Para o meu Gato Preto</h1>
     </div>
     <div class="pai">
@@ -130,6 +131,13 @@
           }, 1000); // tempo da transição de saída
         }, 5000);
       });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('click', () => {
+      const audio = document.getElementById('musica');
+      audio.play();
     });
   </script>
 </body>

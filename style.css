@@ -178,3 +178,11 @@ footer {
     width: 100%;
     height: 100dvh; 
 }
+
+.musica {
+    display: flex;
+    color: #000000;
+    background-color: #ffffff;
+    border: solid 1px rgb(0, 0, 0);
+    cursor: pointer;
+}
