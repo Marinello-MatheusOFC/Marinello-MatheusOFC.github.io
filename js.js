@@ -30,3 +30,4 @@ const imagens = document.querySelectorAll('.container img, .container2 img');
         }, 5000);
       });
     });
+    

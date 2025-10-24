@@ -20,15 +20,16 @@
 </head>
 
 <body>
-  <iframe width="0" height="0"
-    src="https://www.youtube.com/embed/F_c9iON48uw?autoplay=1&loop=1&playlist=F_c9iON48uw" frameborder="0"
-    allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+  <!-- Botão que ativa a música -->
   <header>
     <div class="titulo">
-      <p class="musica">Clique aqui</p>
-      <h1>Para o meu Gato Preto</h1>
+      <p class="musica" onclick="tocarMusica()">Clique aqui</p>
+      <h1>Para Minha Gata Preta</h1>
     </div>
+
+    <!-- Contêiner onde o vídeo será inserido após o clique -->
+    <div id="videoContainer"></div>
+
     <div class="pai">
       <div class="texto1">
         <p>Eu fiz isso pra você, meu amor. Fiz pra que você se lembre de mim… Mas, mais do que isso, fiz pra te lembrar
@@ -50,6 +51,7 @@
   </header>
 
   <main>
+    <!-- Carrossel intacto -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -129,11 +131,46 @@
   </main>
 
   <footer>
-    <!-- Rodapé opcional -->
+    <div class="paicont">
+      <div class="containercard1">
+        <div class="card1">1</div>
+        <div class="card2">2</div>
+        <div class="card3">3</div>
+        <div class="card4">4</div>
+        <div class="card5">5</div>
+      </div>
+
+      <div class="containercard2">
+        <div class="card6">6</div>
+        <div class="card7">7</div>
+        <div class="card8">8</div>
+        <div class="card9">9</div>
+        <div class="card10">10</div>
+      </div>
+    </div>
+
+    <div class="bottonal">
+      Clique aqui para uma mensagem aleatória?
+    </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para tocar música do YouTube -->
+  <script>
+    function tocarMusica() {
+      const container = document.getElementById('videoContainer');
+      if (!container.innerHTML) {
+        container.innerHTML = `
+          <iframe width="0" height="0"
+            src="https://www.youtube.com/embed/F_c9iON48uw?autoplay=1&loop=1&playlist=F_c9iON48uw"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        `;
+        container.style.display = 'block';
+      }
+    }
+  </script>
 </body>
 
 </html>
