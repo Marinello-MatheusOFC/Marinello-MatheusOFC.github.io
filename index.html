@@ -20,38 +20,36 @@
 </head>
 
 <body>
-  <!-- Botão que ativa a música -->
   <header>
     <div class="titulo">
-      <p class="musica" onclick="tocarMusica()">Clique aqui</p>
+      <button class="musica" onclick="tocarMusica()">Tocar música</button>
+      <audio id="musicaAudio"
+        src="img/Paul Anka _Put Your Head On My Shoulder_ on The Ed Sullivan Show [zpGpu-pIVEk].mp3"></audio>
       <h1>Para Minha Gata Preta</h1>
     </div>
 
-    <!-- Contêiner onde o vídeo será inserido após o clique -->
-    <div id="videoContainer"></div>
-
     <div class="pai">
       <div class="texto1">
-        <p>Eu fiz isso pra você, meu amor. Fiz pra que você se lembre de mim… Mas, mais do que isso, fiz pra te lembrar
-          do quanto você é especial pra mim . Muito. . . <br><br>
-          Você é como uma estrela cadente que passou pela minha vida — inesperada, intensa, impossível de ignorar . . .
+        <p>
+          Eu fiz isso pra você, meu amor. Fiz pra que você se lembre de mim… Mas, mais do que isso, fiz pra te lembrar
+          do quanto você é especial pra mim. Muito... 💖 <br><br>
+          Você é como uma estrela cadente que passou pela minha vida — inesperada, intensa, impossível de ignorar... 🌠✨
           <br><br>
           As deusas de todas as religiões teriam inveja da sua beleza. De verdade.
-          Eu ainda não entendo como alguém como eu conseguiu ter a sorte de te encontrar. <br>
-          Você é demais pra qualquer um . . .<br><br>
-          Olhar pra você é como olhar pro sol: se a gente olha demais, queima. . . mas mesmo assim vale a pena, só por
+          Eu ainda não entendo como alguém, como eu, conseguiu ter a sorte de te encontrar. <br>
+          Você é demais pra qualquer um... 💌<br><br>
+          Olhar pra você é como olhar pro sol: se a gente olha demais, queima... mas mesmo assim vale a pena, só pra
           ver você brilhar.
-          Pra mim, você é a própria definição de perfeição.<br><br>
+          Pra mim, você é a própria definição de perfeição. ☀️🌌<br><br>
           Tenho medo de te perder, ainda mais porque nem te tenho de verdade.
           Mas eu vou fazer o que for preciso. Tudo que eu puder.
-          Vou dar o máximo de mim. . . <br>por você, por nós. . .
+          Vou dar o máximo de mim... <br>por você, por nós... 💖🎇
         </p>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- Carrossel intacto -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -135,40 +133,36 @@
       <div class="containercard1">
         <div class="card1">1</div>
         <div class="card2">2</div>
+      </div>
+
+      <div class="containercard2">
         <div class="card3">3</div>
         <div class="card4">4</div>
         <div class="card5">5</div>
       </div>
 
-      <div class="containercard2">
+      <div class="containercard3">
         <div class="card6">6</div>
         <div class="card7">7</div>
         <div class="card8">8</div>
+      </div>
+      
+      <div class="containercard4">
         <div class="card9">9</div>
         <div class="card10">10</div>
       </div>
     </div>
-
-    <div class="bottonal">
-      Clique aqui para uma mensagem aleatória?
-    </div>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Script para tocar música do YouTube -->
+  <script src="script.js"></script>
   <script>
     function tocarMusica() {
-      const container = document.getElementById('videoContainer');
-      if (!container.innerHTML) {
-        container.innerHTML = `
-          <iframe width="0" height="0"
-            src="https://www.youtube.com/embed/F_c9iON48uw?autoplay=1&loop=1&playlist=F_c9iON48uw"
-            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        `;
-        container.style.display = 'block';
-      }
+      const audio = document.getElementById('musicaAudio');
+      audio.play().catch(err => {
+        alert("Não foi possível tocar a música. Clique novamente ou permita áudio.");
+        console.error(err);
+      });
     }
   </script>
 </body>

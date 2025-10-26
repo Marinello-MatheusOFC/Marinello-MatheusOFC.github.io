@@ -1,3 +1,4 @@
+/* Reset e estilos gerais */
 * {
   margin: 0;
   padding: 0;
@@ -8,19 +9,24 @@ body {
   max-height: 100vh;
   background: #1b0f20;
   background-image: url(https://i.pinimg.com/originals/04/e4/7e/04e47e2855c78b802b523ff6d1357b25.gif);
-  background-size: 120vh;
+  background-size: 100dvh;
   font-family: "Griffy", system-ui;
+  color: white;
 }
 
 header {
   width: 100%;
   height: 100dvh;
+  position: relative;
+  text-align: center;
 }
 
 .titulo {
+  margin-top: 1%;
   width: 100%;
   height: 20%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -33,14 +39,17 @@ header {
 }
 
 .texto1 {
-  font-size: 20px;
+  font-size: 160%;
   width: 60%;
-  height: 99%;
+  height: 95%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   border-radius: 30px;
   background-color: rgba(121, 121, 121, 0.178);
   box-shadow: -1px -1px 73px -7px rgba(255, 255, 255, 0.75);
+  padding: 20px;
 }
 
 h1 {
@@ -58,122 +67,14 @@ p {
 
 main {
   width: 100%;
-  height: 110dvh;
+  height: 70dvh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
 }
 
-footer {
-  border: solid 1px red;
-  width: 100%;
-  height: 100dvh;
-}
-
-.musica {
-  color: #000000;
-  background-color: #ffffff;
-  cursor: pointer;
-  border-radius: 10px;
-  width: auto;
-  height: auto;
-  box-shadow: 4px 4px 5px rgba(255, 238, 0, 0.5);
-}
-
-/* ✅ Carrossel estilo celular */
-#carouselExampleIndicators {
-  max-width: 400px;
-  margin: 0 auto 3rem;
-  border-radius: 45px;
-  overflow: hidden;
-}
-
-.carousel-item {
-  height: 550px;
-  background-color: #000;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.carousel-caption h5 {
-  font-family: 'Griffy', cursive;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 1rem;
-  color: white;
-}
-
-.carousel-indicators button {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.6);
-  margin: 0 6px;
-  border: none;
-}
-
-.carousel-indicators .active {
-  background-color: #000;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  background-color: transparent;
-}
-
-/* ✅ Responsividade */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2.5rem;
-    width: 80%;
-    height: 40%;
-  }
-
-  .texto1 {
-    font-size: 1rem;
-    padding: 1.5rem;
-  }
-
-  .carousel-item {
-    height: 450px;
-  }
-
-  .carousel-caption h5 {
-    font-size: 0.9rem;
-  }
-
-  .musica {
-    width: 15%;
-    height: 28%;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  .texto1 {
-    font-size: 0.9rem;
-    padding: 1rem;
-  }
-
-  .carousel-item {
-    height: 400px;
-  }
-
-  .carousel-caption h5 {
-    font-size: 0.8rem;
-  }
-}
-
-
-
+/* Botões */
 .musica {
   padding: 10px 20px;
   background-color: #ffffff;
@@ -190,30 +91,69 @@ footer {
   transform: scale(1.05);
 }
 
-#videoContainer {
-  position: absolute;
-  width: 0;
-  height: 0;
+/* Carrossel */
+#carouselExampleIndicators {
+  max-width: 400px;
+  border-radius: 45px;
   overflow: hidden;
-  visibility: hidden;
+}
+
+.carousel-item {
+  height: 550px;
+  background-color: #000;
+}
+
+.carousel-item img,
+.carousel-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption h5 {
+  font-family: 'Griffy', cursive;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0 6px;
+  border: none;
+}
+
+.carousel-indicators .active {
+  background-color: #000;
+}
+
+footer {
+  width: 100%;
+  height: 95dvh;
+}
+
+.containercard1,
+.containercard2,
+.containercard3,
+.containercard4 {
+  border: solid 1px rgb(255, 255, 255);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12%;
+  align-items: center;
+  justify-content: center;
 }
 
 .paicont {
   width: 100%;
   height: 100%;
   display: flex;
-}
-
-.containercard1 {
-  border: solid 1px snow;
-  width: 50%;
-  height: 100%;
-}
-
-.containercard2 {
-  border: solid 1px snow;
-  width: 50%;
-  height: 100%;
 }
 
 .card1,
@@ -226,7 +166,73 @@ footer {
 .card8,
 .card9,
 .card10 {
-  border: solid 1px blue;
-  width: 40%;
-  height: 20%;
+  border-radius: 10px;
+  width: 80%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(121, 121, 121, 0.178);
+  box-shadow: 0px 0px 22px -2px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 0px 22px -2px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 0px 22px -2px rgba(255, 255, 255, 1);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  .texto1 {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  #carouselExampleIndicators {
+    max-width: 90%;
+    height: 400px;
+  }
+
+  .carousel-item {
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    width: 100%;
+    height: 200dvh;
+  }
+  .containercard1,
+  .containercard2,
+  .containercard3,
+  .containercard4 {
+    width: 100%;
+    height: 100%;
+  }
+   .paicont {
+    flex-direction: column;
+  }
+
+  main {
+    height: 50dvh;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .texto1 {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  #carouselExampleIndicators {
+    height: 300px;
+  }
+
+  .carousel-item {
+    height: 300px;
+  }
 }
