@@ -15,6 +15,7 @@ body {
 }
 
 header {
+  margin-top: 5%;
   width: 100%;
   height: 100dvh;
   position: relative;
@@ -39,7 +40,7 @@ header {
 }
 
 .texto1 {
-  font-size: 160%;
+  font-size: 110%;
   width: 60%;
   height: 95%;
   display: flex;
@@ -67,7 +68,7 @@ p {
 
 main {
   width: 100%;
-  height: 70dvh;
+  height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,15 +100,14 @@ main {
 }
 
 .carousel-item {
-  height: 550px;
+  height: 100%;
   background-color: #000;
 }
 
 .carousel-item img,
 .carousel-item video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 350px;
+  height: 350px;
 }
 
 .carousel-caption h5 {
@@ -132,15 +132,19 @@ main {
 }
 
 footer {
+  margin-top: 2%;
   width: 100%;
-  height: 95dvh;
+  height: 100dvh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
-.containercard1,
-.containercard2,
-.containercard3,
-.containercard4 {
-  border: solid 1px rgb(255, 255, 255);
+
+.containercard1 {
   width: 50%;
   height: 100%;
   display: flex;
@@ -151,31 +155,74 @@ footer {
 }
 
 .paicont {
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   display: flex;
+  background-image: url(img/baixados.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.9; /* deixa o footer todo meio transparente */
+  box-shadow: -1px -1px 73px -7px rgba(0, 17, 255, 0.75);
+  border-radius: 10px
 }
 
-.card1,
-.card2,
-.card3,
-.card4,
-.card5,
-.card6,
-.card7,
-.card8,
-.card9,
-.card10 {
-  border-radius: 10px;
-  width: 80%;
-  height: 25%;
+.info1 {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
-  text-align: center;
-  background-color: rgba(121, 121, 121, 0.178);
+}
+.info {
+  width: 35%;
+  height: auto;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: beige;
+  color: black;
   box-shadow: 0px 0px 22px -2px rgba(255, 255, 255, 1);
-  -webkit-box-shadow: 0px 0px 22px -2px rgba(255, 255, 255, 1);
-  -moz-box-shadow: 0px 0px 22px -2px rgba(255, 255, 255, 1);
+  transition: transform 0.5s ease;
+}
+
+h3:hover {
+  transform: scale(1.05);
+}
+
+.card1 {
+  color: black;
+  border-radius: 10px;
+  width: 90%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(187, 182, 157);
+  box-shadow: 0px 0px 22px -2px rgba(255, 255, 255, 1);
+  transition: all 0.4s ease;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.card1:hover {
+  opacity: 1;
+}
+
+/* Corrigindo o @keyframes */
+@keyframes card1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Responsividade */
@@ -199,20 +246,30 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
-  footer {
-    width: 100%;
-    height: 200dvh;
+@media (max-width: 768px) {
+  header {
+    margin-top: 5%;
   }
+
+  footer {
+
+    height: 500dvh;
+    width: 100%;
+  }
+
   .containercard1,
   .containercard2,
   .containercard3,
   .containercard4 {
     width: 100%;
-    height: 100%;
+    height: 150%;
   }
+
    .paicont {
+    box-shadow: 0px 0px 22px -2px rgba(255, 255, 255, 1);
+    height: 98%;
     flex-direction: column;
+    background-image: none;
   }
 
   main {
