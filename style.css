@@ -164,7 +164,7 @@ footer {
   background-repeat: no-repeat;
   background-size: 100%;
   opacity: 0.9; /* deixa o footer todo meio transparente */
-  box-shadow: -1px -1px 73px -7px rgba(0, 17, 255, 0.75);
+  box-shadow: -1px -1px 73px -7px rgba(66, 126, 255, 0.75);
   border-radius: 10px
 }
 
